@@ -3,7 +3,7 @@
 def valid_move?(board, input)
   input -= 1
   if input.between?(1, 9) == true
-    position_taken(board, input)
+    position_taken?(board, input)
   else
     true
   end
