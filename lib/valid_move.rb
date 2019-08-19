@@ -2,10 +2,8 @@
 
 def valid_move?(board, input)
   input -= 1
-  if input.between?(1, 9) == false
-    puts "Invalid move"
-  elsif position_taken(board, input) == true
-    puts "Invalid move"
+  if input.between?(1, 9) == true
+    position_taken(board, input)
   else
     true
   end
