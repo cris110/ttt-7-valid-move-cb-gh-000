@@ -4,8 +4,6 @@ def valid_move?(board, input)
   input -= 1
   if input.between?(1, 9) == true && position_taken?(board, input) == false
     true
-  elsif input.between?(1, 9) == true && position_taken?(board, input) == true
-    true
   else
     false
   end
